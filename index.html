@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Chat</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="user-profil-wrap">
+        <a class="logo" href="./index.html">jAvA</a>
+        <input class="search-input" type="search" placeholder="search">
+        <button class="user-profil" id="profil"><img src="./svg/profile-user.svg" alt=""></button>
+        <div class="prof open"></div>
+
+        <div class="modal open">
+            <div class="modal-wrap">
+                <button class="modal-close"><img src="./X-img.png" alt=""></button>
+                <h1 class="modal-title">Your Name</h1>
+                <input class="name-in" type="text" id="name-input" placeholder="Your Name">
+            </div>
+        </div>
+    </div>
+    <div class="messages-container" id="messages_container"></div>
+    <div class="input-container">
+        <input class="message-client" type="text" id="message-input" placeholder="Your Message">
+        <input type="button" id="send-message-button" value="Send">
+    </div>
+    <script src="./websocket.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
+

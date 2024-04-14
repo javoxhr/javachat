@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    font-family:  sans-serif;
+    font-weight: 500;
+    background-color: #000;
+    font-size: 16px;
+    /* background-color: blueviolet; */
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 25px;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.message.outgoing {
+    text-align: right;
+    background-color: rgb(145, 253, 254); /* Цвет для исходящих сообщений */
+}
+
+.message.incoming {
+    text-align: left;
+    background-color: red; /* Цвет для входящих сообщений */
+}
+
+
+.messages-container {
+    border: 2px solid #000;
+    overflow-y: scroll;
+    height: 600px; /* Высота контейнера сообщений, чтобы позволить прокрутку */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* background-color: rgb(125, 252, 241); */
+    color: #fff;
+    /* border: 2px solid; */
+    border-radius: 20px 0 0 20px;
+
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.input-container {
+    margin-top: 10px;
+    color: rgb(145, 253, 254);
+}
+
+.user-profil {
+    width: 53px;
+    height: 53px;
+    border: none;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s all;
+    cursor: pointer;
+}
+.user-profil:hover {
+    opacity: 0.8;
+}
+.user-profil img{
+    width: 55px;
+    height: 55px;
+}
+
+.user-profil-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.search-input {
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background-color: transparent;
+    color: #fff;
+    margin-right: 50px;
+}
+
+.name-in {
+    width: 200px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid grey;
+}
+
+
+/* modal */
+
+.modal {
+    width: 300px;
+    position: fixed;
+    top: 20%;
+    left: 88%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #000;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-title {
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.prof {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.374);
+}
+
+.modal-close {
+    border: none;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+}
+
+
+.modal-close:hover {
+    opacity: 0.8;
+}
+
+.open {
+    display: none;
+}
+
